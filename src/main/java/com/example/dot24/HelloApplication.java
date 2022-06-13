@@ -159,7 +159,9 @@ public class HelloApplication extends Application {
         UsersHbox1.setAlignment(Pos.CENTER);
         UsersHbox2.setAlignment(Pos.CENTER);
         HBox buttonbox=new HBox(50,openbutton,dealbutton);buttonbox.setAlignment(Pos.CENTER);
-        VBox Allvbox=new VBox(30,UsersHbox1,UsersHbox2,buttonbox);Allvbox.setStyle("-fx-padding:0");
+        Label title=new Label("24点扑克游戏");title.setStyle("-fx-font-size:30;-fx-text-fill:red;fx-shadow:5;");title.setCursor(Cursor.HAND);
+        HBox titlebox=new HBox(title);titlebox.setAlignment(Pos.CENTER);
+        VBox Allvbox=new VBox(20,titlebox,UsersHbox1,UsersHbox2,buttonbox);Allvbox.setStyle("-fx-padding:0");
         Allvbox.setAlignment(Pos.CENTER);
 //        g1.getChildren().addAll(Allvbox);
         g1.setCenter(Allvbox);
@@ -513,7 +515,7 @@ public class HelloApplication extends Application {
     }//读入数据
     public static void main(String[] args) {
         readFileByLines("Users.txt");
-//        File file = new File("./");
+//        File file = new File("./");//输出当前项目根目录
 //        System.out.println(file.getAbsoluteFile());
        launch();
     }
