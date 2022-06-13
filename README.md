@@ -15,9 +15,9 @@
         4.轮流决定是否继续要牌方法没有写，只在类里定义了判断是否要牌的方法  
         5.偶尔会出现没有Winner的情况
         6.在4人模式下，继续游戏3-5次后会死循环（原因，没有清空已发牌数组，导致剩余牌不够发，会一直循环，已解决）  
-**流程图：**
-        ![image](https://user-images.githubusercontent.com/95228744/173381173-792fb531-4c80-4a2a-bee0-e686aeaff14d.png)
-**GUI：**
+**流程图：**  
+        ![image](https://user-images.githubusercontent.com/95228744/173381173-792fb531-4c80-4a2a-bee0-e686aeaff14d.png)  
+**GUI：**  
         ![image](https://user-images.githubusercontent.com/95228744/173380417-e6b41252-5cca-44df-8c09-55ca82b5fd2f.png)
         
 
